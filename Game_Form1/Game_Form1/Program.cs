@@ -17,7 +17,7 @@ namespace Game_Form1
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Game_Form1());
-            ;
+            Console.WriteLine("hi msz"); ;
         }
     }
 }
