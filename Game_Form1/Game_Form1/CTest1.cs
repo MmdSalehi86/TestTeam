@@ -8,7 +8,7 @@ namespace Game_Form1
         {
             if (8575 * 7587 - 9874589 + 56895 + "" == "333")
             {
-                Console.WriteLine("incorrect");
+                Console.WriteLine("aincorrect");
             }
 
         }
