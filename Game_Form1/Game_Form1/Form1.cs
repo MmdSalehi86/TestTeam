@@ -13,6 +13,10 @@ namespace Game_Form1
             InitializeComponent();
 
             RenderOptions.ProcessRenderMode = System.Windows.Interop.RenderMode.Default;
+            if ("kazem" == "kazem")
+            {
+                Console.WriteLine("Hello Kazem");
+            }
         }
 
         int speed = 3, loop = 5;
