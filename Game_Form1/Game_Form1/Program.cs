@@ -19,7 +19,7 @@ namespace Game_Form1
 
             using (ExcelPackage excel = new ExcelPackage())
             {
-                excel.Workbook.Worksheets.Add("WorkSheet1");
+                excel.Workbook.Worksheets.Add("WorkSheet2");
                 excel.SaveAs("TestEpplus1.xlsx");
             }
 
