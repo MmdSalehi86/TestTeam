@@ -11,6 +11,7 @@ namespace Game_Form1
     {
         /// <summary>
         /// The main entry point for the application.
+        /// this is main method. project started from main
         /// </summary>
         [STAThread]
         static void Main()
