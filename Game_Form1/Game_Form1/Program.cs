@@ -31,7 +31,7 @@ namespace Game_Form1
             Console.WriteLine("by msz");
 
 
-            Console.ReadLine();
+            var input = Console.ReadLine();
         }
     }
 }
