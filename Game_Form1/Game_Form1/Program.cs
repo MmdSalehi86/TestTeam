@@ -29,6 +29,9 @@ namespace Game_Form1
             Application.Run(new Game_Form1());
             Console.WriteLine("hi msz");
             Console.WriteLine("by msz");
+
+
+            Console.ReadLine();
         }
     }
 }
