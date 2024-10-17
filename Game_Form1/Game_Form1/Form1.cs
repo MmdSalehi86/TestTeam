@@ -78,29 +78,36 @@ namespace Game_Form1
             {
                 await Task.Run(() =>
                 {
-                    pic1.BeginInvoke((MethodInvoker)delegate
+                    try
                     {
-                        if (pic1.Left <= scopeP1.Left)
+                        pic1.BeginInvoke((MethodInvoker)delegate
                         {
-                            if (game)
+                            if (pic1.Left <= scopeP1.Left)
                             {
-                                game = false;
-                                MessageBox.Show("Player1 Winner", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                                Game_Form1_Load(null, null);
-                                pic1.Visible = false;
+                                if (game)
+                                {
+                                    game = false;
+                                    MessageBox.Show("Player1 Winner", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                                    Game_Form1_Load(null, null);
+                                    pic1.Visible = false;
+                                }
                             }
-                        }
-                        else if (pic1.Right >= scopeP2.Right)
-                        {
-                            if (game)
+                            else if (pic1.Right >= scopeP2.Right)
                             {
-                                game = false;
-                                pic1.Visible = false;
-                                MessageBox.Show("Player2 Winner", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                                Game_Form1_Load(null, null);
+                                if (game)
+                                {
+                                    game = false;
+                                    pic1.Visible = false;
+                                    MessageBox.Show("Player2 Winner", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                                    Game_Form1_Load(null, null);
+                                }
                             }
-                        }
-                    });
+                        });
+                    }
+                    catch
+                    {
+                        return;
+                    }
                 });
             }
             catch
