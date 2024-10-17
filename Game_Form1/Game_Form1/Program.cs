@@ -30,7 +30,6 @@ namespace Game_Form1
             Console.WriteLine("hi msz");
             Console.WriteLine("by msz");
 
-
             Console.ReadLine();
         }
     }
