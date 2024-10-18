@@ -16,13 +16,13 @@ namespace Game_Form1
         [STAThread]
         static void Main()
         {
-            ExcelPackage.LicenseContext = LicenseContext.NonCommercial;
+            //ExcelPackage.LicenseContext = LicenseContext.NonCommercial;
 
-            using (ExcelPackage excel = new ExcelPackage())
-            {
-                excel.Workbook.Worksheets.Add("WorkSheet1");
-                excel.SaveAs("TestEpplus1.xlsx");
-            }
+            //using (ExcelPackage excel = new ExcelPackage())
+            //{
+            //    excel.Workbook.Worksheets.Add("WorkSheet1");
+            //    excel.SaveAs("TestEpplus1.xlsx");
+            //}
 
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
