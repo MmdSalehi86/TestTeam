@@ -28,8 +28,6 @@ namespace Game_Form1
             scopeP1.Left = this.Width / 2 - scopeP1.Width;
             scopeP2.Left = scopeP1.Right;
             pic1.Left = scopeP2.Left - pic1.Width / 2;
-
-            // HELLO
         }
 
         private void Game_Form1_KeyUp(object sender, KeyEventArgs e)
